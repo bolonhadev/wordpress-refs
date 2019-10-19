@@ -1,16 +1,15 @@
 <?php
 /**
- * Archives template.
- * search, tags posts, category posts
- * 
- * 
+ * ARCHIVES TEMPLATE
+ * Search result page
+ * This will print the tags posts, category posts
+ * And search results
  */
 
 // Do not allow directly accessing this file.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit( 'Direct script access denied.' );
 }
-
 // Handling with the URL Search Term to get posts GET-METHOD
 // Tratando a URL para chamada dos posts GET-METHOD
 global $wp;
@@ -42,17 +41,16 @@ $get_base_search = ($get_base_search=='tag') ? 'tag' : 'category_name';
 <section id="blog-section">
 	<div class="blog-post-content">
 		<div class="blog-content">
-
+      <?php // Calling a search box || Chamando caixa de busca ?>
 			<?php require( locate_template( 'templates/blog-search-box.php' ) ); ?>
-
 			<div class="blog-posts-grid">
-
+        <?php // Here's the posts loop || Aqui está o loop de posts ?>
 				<?php if($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+          <?php // Calling the loop template || Chamando o template do loop ?>
 					<?php require( locate_template( 'templates/loop-blog.php' ) ); ?>
 				<?php endwhile; ?>
 
 				<div class="paginator">
-
         <?php 
 
 				  $big = 999999999; 
