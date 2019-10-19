@@ -1,9 +1,3 @@
-<!-- 
-	// EN_USA: Main loop using our query  
-	// PT_BR: O loop, usando nossa query
- -->
-<?php if($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-
 <?php 
 
 	// EN_USA: This is my custom layout, please EDIT this;  
@@ -52,23 +46,3 @@
 		</div>
 	</a>
 </div>
-<?php endwhile; ?>
-<div class="nnbp-paginator">
-	<?php 
-		// EN_USA & PT_BR: https://codex.wordpress.org/Function_Reference/paginate_links
-		$big = 999999999;
-		echo paginate_links( array(
-			'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-			'add_args'  => true,
-			'format' => '/page/%#%',
-			'current' => max( 1, $curpage ),
-			'total' => $query->max_num_pages,
-			'prev_next'          => true,
-			'prev_text'          => __('Previous'),
-			'next_text'          => __('Next')
-		) );
-
-		wp_reset_postdata();
-	?>
-</div>
-<?php endif; ?>
