@@ -1,14 +1,14 @@
-# Wordpress References
+# WORDPRESS REFERENCES
 Referências para Wordpress
 
-## A tiny Wordpress boilerplate
+## A TINY WORDPRESS BOILERPLATE
 Arquivos para tema de Wordpress
 
-### Files || Arquivos
+### FILES || ARQUIVOS
 
-#### /templates
+#### /TEMPLATES
 
-##### blog-search-box.php
+##### BLOG-SEARCH-BOX.PHP
 
 select > option > Categories
   
@@ -18,7 +18,7 @@ input > Search
 
 input > Busca
 
-##### loop-blog.php
+##### LOOP-BLOG.PHP
 
 The post loop
 
@@ -26,37 +26,37 @@ O loop do post
 
 #### /
 
-##### archive.php
+##### ARCHIVE.PHP
 
 Search result page (tags, posts, search)
 
 Resultado das buscas (tags, posts e buscas)
 
-##### blog-page.php
+##### BLOG-PAGE.PHP
 
 Page layout for blog page
 
 Uma página home de blog 
 
-##### function.php
+##### FUNCTION.PHP
 
 Global functions
 
 Funções globais
 
-##### single-featured-post.php
+##### SINGLE-FEATURED-POST.PHP
 
 Another layout to an single post
 
 Layout opcional para um post simples
 
-##### single.php
+##### SINGLE.PHP
 
 Default single post layout
 
 Post simples padrão
 
 
-## Me
+## ME
 
 @BolonhaDev
