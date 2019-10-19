@@ -10,13 +10,13 @@ Arquivos para tema de Wordpress
 
 ##### blog-search-box.php
 
-<select><option> Categories
+select > option > Categories
   
-<select><option> Categorias
+select > option > Categorias
   
-<input> Search
+input > Search
 
-<input> Busca
+input > Busca
 
 ##### loop-blog.php
 
