@@ -77,7 +77,7 @@ wordpress_db:
     - db_data:/var/lib/mysql
   restart: always
   environment:
-    MYSQL_ROOT_PASSWORD: 12bolotas
+    MYSQL_ROOT_PASSWORD: root
     MYSQL_DATABASE: nudatabase
     MYSQL_USER: nuuser
     MYSQL_PASSWORD: zumbaLand1987*
